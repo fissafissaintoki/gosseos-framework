@@ -1,5 +1,4 @@
-
-# GosseOS Framework
+Initialize GosseOS framework README# GosseOS Framework
 
 GosseOS is an operator-centered AI framework designed to structure complex human-AI work.
 
