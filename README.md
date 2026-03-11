@@ -8,8 +8,7 @@ The project explores how AI systems can be organized as modular architectures in
 ---
 
 ## Core Concepts
-
-Operator-driven AI workflows  
+![GosseOS Architecture](./gosseos_architecture_diagram.png)Operator-driven AI workflows  
 Modular agent architecture  
 Decision-support systems  
 Governance-aware AI execution  
