@@ -86,7 +86,9 @@ A good artifact should survive beyond one chat session.
 ## Start Here
 
 ### Public overview
+- [Public Short Description](./PUBLIC_SHORT_DESCRIPTION.md)
 - [START_HERE.md](./START_HERE.md)
+- [Navigator](./NAVIGATOR.md)
 
 ### KnowledgeOS extracts
 - [KnowledgeOS Extract Index](./knowledgeos/extracts/README.md)
@@ -99,13 +101,19 @@ A good artifact should survive beyond one chat session.
 
 If you are new, use this sequence:
 
-1. **START_HERE.md**  
+1. **PUBLIC_SHORT_DESCRIPTION.md**  
+   Brutally clear version of what GosseOS and KnowledgeOS are.
+
+2. **START_HERE.md**  
    Quick explanation of what GosseOS / KnowledgeOS are and why they exist.
 
-2. **KnowledgeOS Extract Index**  
+3. **NAVIGATOR.md**  
+   Guided reading path for the repository.
+
+4. **KnowledgeOS Extract Index**  
    Entry point into condensed session extracts.
 
-3. **Main extract + artifact bundle**  
+5. **Main extract + artifact bundle**  
    Shows how raw working sessions become structured knowledge and reusable assets.
 
 ---
