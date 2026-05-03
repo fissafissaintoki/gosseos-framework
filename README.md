@@ -1,6 +1,6 @@
-# GosseOS Framework
+# IntoKI OS Framework
 
-GosseOS is an operator-centered AI framework for turning raw input into structured, reusable, governance-aware work.
+IntoKI OS is an operator-centered AI workflow framework for turning raw input into structured, reusable, governance-aware work.
 
 It is not built around "better prompts" alone.
 It is built around a stronger question:
@@ -9,9 +9,9 @@ It is built around a stronger question:
 
 ---
 
-## What GosseOS is
+## What IntoKI OS is
 
-GosseOS is a practical framework for:
+IntoKI OS is a practical framework for:
 - structuring human–AI workflows
 - routing tasks to the right mode or model
 - building reusable prompts, frameworks, and artifacts
@@ -19,7 +19,7 @@ GosseOS is a practical framework for:
 - treating governance, auditability, and operational clarity as part of the system
 
 In short:
-**GosseOS treats AI as operating architecture, not as a toy prompt interface.**
+**IntoKI OS treats AI as operating architecture, not as a toy prompt interface.**
 
 ---
 
@@ -85,15 +85,21 @@ A good artifact should survive beyond one chat session.
 
 ## Start Here
 
+### Fast start
+- [Start in 2 Minutes](./START_IN_2_MIN.md)
+- [Run the IntoKI OS Workflow](./RUN_GOSSEOS_WORKFLOW.md)
+- [Visual System Map](./docs/GOSSEOS_VISUAL_MAP.md)
+
 ### Public overview
 - [Public Short Description](./PUBLIC_SHORT_DESCRIPTION.md)
 - [START_HERE.md](./START_HERE.md)
 - [Navigator](./NAVIGATOR.md)
 
-### KnowledgeOS extracts
-- [KnowledgeOS Extract Index](./knowledgeos/extracts/README.md)
-- [2026-04-19 Main Extract](./knowledgeos/extracts/2026-04-19_operator-fischer_chat-extract_voice-governance-character.md)
-- [2026-04-19 Artifact Bundle](./knowledgeos/extracts/2026-04-19_operator-fischer_chat-artifacts.md)
+### Proof of work
+- [Cold Chain Risk Case](./cases/LOGISTICS_COLD_CHAIN_RISK_CASE.md)
+- [Cold Chain Real Impact Scenario](./cases/COLD_CHAIN_REAL_IMPACT.md)
+- [Router Live Demo](./examples/ROUTER_LIVE_DEMO.md)
+- [100 Persona Red Team Review](./reviews/RED_TEAM_100_AI_USERS.md)
 
 ---
 
@@ -101,20 +107,20 @@ A good artifact should survive beyond one chat session.
 
 If you are new, use this sequence:
 
-1. **PUBLIC_SHORT_DESCRIPTION.md**  
-   Brutally clear version of what GosseOS and KnowledgeOS are.
+1. **START_IN_2_MIN.md**  
+   Fastest entry into the system.
 
-2. **START_HERE.md**  
-   Quick explanation of what GosseOS / KnowledgeOS are and why they exist.
+2. **PUBLIC_SHORT_DESCRIPTION.md**  
+   Clear short version of what IntoKI OS and KnowledgeOS are.
 
-3. **NAVIGATOR.md**  
-   Guided reading path for the repository.
+3. **RUN_GOSSEOS_WORKFLOW.md**  
+   Shows the operating workflow from input to artifact.
 
-4. **KnowledgeOS Extract Index**  
-   Entry point into condensed session extracts.
+4. **docs/GOSSEOS_VISUAL_MAP.md**  
+   Visual architecture of the workflow.
 
-5. **Main extract + artifact bundle**  
-   Shows how raw working sessions become structured knowledge and reusable assets.
+5. **cases/**  
+   Proof-of-work examples and logistics use cases.
 
 ---
 
