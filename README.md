@@ -1,134 +1,202 @@
-# IntoKI OS Framework
+# GosseOS Framework — Operator Fischer Method
 
-IntoKI OS is an operator-centered AI workflow framework for turning raw input into structured, reusable, governance-aware work.
+**GosseOS is a structured AI work system for turning messy input into reusable, reviewable work artifacts.**
 
-It is not built around "better prompts" alone.
-It is built around a stronger question:
+This repository is not a random prompt collection.
+It is a public framework for operating AI more like a work system:
 
-**How do humans use AI as a real working system instead of isolated chat outputs?**
+```text
+raw input -> problem class -> working mode -> artifact -> review -> reusable knowledge
+```
 
----
+The core idea is simple:
 
-## What IntoKI OS is
-
-IntoKI OS is a practical framework for:
-- structuring human–AI workflows
-- routing tasks to the right mode or model
-- building reusable prompts, frameworks, and artifacts
-- separating reasoning from controlled execution
-- treating governance, auditability, and operational clarity as part of the system
-
-In short:
-**IntoKI OS treats AI as operating architecture, not as a toy prompt interface.**
+> A prompt creates an answer. An operator system creates repeatable working capability.
 
 ---
 
-## What we are actually doing here
+## What this project solves
 
-The project explores how to turn:
-- raw thoughts
-- messy notes
-- vague business ideas
-- workflow questions
-- governance problems
-- creative direction
+Most AI workflows fail in the same places:
 
-into:
-- clear problem classes
-- explicit modes
-- reusable prompts
-- decision frameworks
-- structured artifacts
-- governance-capable execution logic
+- the input is messy
+- the problem type is unclear
+- the output format is not defined
+- assumptions are not checked
+- good results disappear in chat history
+- prompts are reused without context or quality control
 
-This means the core value is not just generation.
-The core value is **translation from ambiguity into usable working structure**.
+GosseOS addresses this by adding structure before generation.
 
----
+Instead of asking AI for a direct answer, the workflow first asks:
 
-## Core Principles
-
-### 1. Problem class before solution
-Not every request is a writing task.
-Some are architecture problems, decision problems, governance problems, or workflow problems.
-
-### 2. Routing beats model religion
-The best model is not the point.
-The right model or mode for the right task is.
-
-### 3. Harness beats hype
-A strong operating setup matters more than brand loyalty to one model.
-
-### 4. Governance is part of the system
-When AI enters real work, you need:
-- boundaries
-- logging
-- permissions
-- controlled execution
-- auditability
-
-### 5. Reuse beats one-off brilliance
-A good artifact should survive beyond one chat session.
+1. What kind of problem is this?
+2. Which working mode fits the task?
+3. What artifact should be built?
+4. What risks, assumptions, or governance limits matter?
+5. What should be saved for reuse?
 
 ---
 
-## Current Focus Areas
+## The operating model
 
-- **LLM routing and operatoric usage**
-- **Voice-first hybrid workflows**
-- **Governance-first AI architecture**
-- **Character steering and self-governance**
-- **Prototype vs. production readiness**
-- **Knowledge extraction and canonization**
-
----
-
-## Start Here
-
-### Fast start
-- [Start in 2 Minutes](./START_IN_2_MIN.md)
-- [Run the IntoKI OS Workflow](./RUN_GOSSEOS_WORKFLOW.md)
-- [Visual System Map](./docs/GOSSEOS_VISUAL_MAP.md)
-
-### Public overview
-- [Public Short Description](./PUBLIC_SHORT_DESCRIPTION.md)
-- [START_HERE.md](./START_HERE.md)
-- [Navigator](./NAVIGATOR.md)
-
-### Proof of work
-- [Cold Chain Risk Case](./cases/LOGISTICS_COLD_CHAIN_RISK_CASE.md)
-- [Cold Chain Real Impact Scenario](./cases/COLD_CHAIN_REAL_IMPACT.md)
-- [Router Live Demo](./examples/ROUTER_LIVE_DEMO.md)
-- [100 Persona Red Team Review](./reviews/RED_TEAM_100_AI_USERS.md)
+```text
+Human owner
+   ↓
+Raw input / idea / problem / case
+   ↓
+Problem-class detection
+   ↓
+Mode routing
+   ↓
+Artifact building
+   ↓
+Red-team and governance review
+   ↓
+KnowledgeOS extraction
+   ↓
+Case library / reusable framework / public proof of work
+```
 
 ---
 
-## Recommended Reading Path
+## Key concepts
 
-If you are new, use this sequence:
+### GosseOS
 
-1. **START_IN_2_MIN.md**  
-   Fastest entry into the system.
+The execution layer.
 
-2. **PUBLIC_SHORT_DESCRIPTION.md**  
-   Clear short version of what IntoKI OS and KnowledgeOS are.
+It structures the work through problem classes, modes, artifact logic, review gates, and controlled execution.
 
-3. **RUN_GOSSEOS_WORKFLOW.md**  
-   Shows the operating workflow from input to artifact.
+### KnowledgeOS
 
-4. **docs/GOSSEOS_VISUAL_MAP.md**  
-   Visual architecture of the workflow.
+The memory and extraction layer.
 
-5. **cases/**  
-   Proof-of-work examples and logistics use cases.
+It preserves reusable principles, prompts, frameworks, cases, and canon candidates instead of letting valuable work disappear inside chat sessions.
+
+### Operator Fischer Method
+
+The public working method behind the system.
+
+It translates raw input into structured, reusable work through a repeatable chain:
+
+```text
+raw input -> problem class -> mode -> structure -> artifact -> review -> reuse
+```
 
 ---
 
-## Vision
+## Working modes
 
-The long-term vision is simple:
+| Mode | Purpose |
+|---|---|
+| ANALYZE | Understand the problem, context, causes, and constraints |
+| BUILD | Create a usable artifact such as a checklist, framework, prompt, or briefing |
+| AUDIT | Check weaknesses, gaps, risks, and missing evidence |
+| RED TEAM | Attack assumptions and improve robustness |
+| BRIEFING | Compress complex material into management-ready form |
+| GOVERNANCE | Define boundaries, ownership, escalation, and review logic |
+| LOGISTICS | Structure operational process and supply-chain problems |
 
-**Use AI as a structured, controllable, reusable work system.**
+---
 
-Not just to produce outputs.
-But to build clearer thinking, stronger workflows, better decisions, and governance-capable execution.
+## Typical artifacts
+
+| Artifact | Use |
+|---|---|
+| Decision matrix | Make options comparable and reviewable |
+| Checklist | Turn quality requirements into repeatable checks |
+| SOP / process instruction | Standardize recurring work |
+| Management briefing | Create fast orientation for decision-makers |
+| Prompt framework | Make AI usage reusable instead of improvised |
+| Risk matrix | Make operational or governance risks visible |
+| Case study | Show before/after transformation and proof of work |
+| Knowledge extract | Preserve reusable principles from a work session |
+
+---
+
+## Start here
+
+If you are new, use this path:
+
+1. [Start in 2 Minutes](./START_IN_2_MIN.md)
+2. [Public Short Description](./PUBLIC_SHORT_DESCRIPTION.md)
+3. [Run the GosseOS Workflow](./RUN_GOSSEOS_WORKFLOW.md)
+4. [Navigator](./NAVIGATOR.md)
+5. [Raw Input to Artifact Framework](./frameworks/rawinput-to-artifact.md)
+6. [Universal Artifact Builder Prompt](./prompts/universal-artifact-builder.md)
+7. [Red-Team Review](./reviews/RED_TEAM_REVIEW.md)
+
+---
+
+## Repository map
+
+```text
+gosseos-framework/
+├── README.md
+├── START_IN_2_MIN.md
+├── PUBLIC_SHORT_DESCRIPTION.md
+├── RUN_GOSSEOS_WORKFLOW.md
+├── NAVIGATOR.md
+├── frameworks/
+│   └── rawinput-to-artifact.md
+├── prompts/
+│   └── universal-artifact-builder.md
+├── cases/
+│   ├── formal-response-letter.md
+│   ├── logistics-decision-model.md
+│   └── prompt-generator-concept.md
+├── templates/
+├── reviews/
+│   └── RED_TEAM_REVIEW.md
+└── knowledgeos/
+```
+
+---
+
+## Example use cases
+
+### Formal response
+
+Raw input: emotional, unclear situation with an organization, service provider, insurer, or authority.
+
+Output: structured, polite, factual response letter with a clear objective.
+
+### Logistics decision model
+
+Raw input: operational issue in warehousing, cold chain, replenishment, inventory, picking, or transport.
+
+Output: decision matrix, control checklist, risk classification, and management summary.
+
+### Prompt generator concept
+
+Raw input: vague idea for an AI tool or workflow.
+
+Output: target user, workflow, feature set, MVP structure, prompt logic, and risk controls.
+
+---
+
+## Governance principle
+
+The human remains the owner.
+
+AI can help structure, analyze, draft, and review work.
+It must not replace human responsibility for decisions, risk, compliance, or execution.
+
+---
+
+## What this is not
+
+This is not:
+
+- a hype-first AI project
+- a random list of clever prompts
+- a single-model fan project
+- an automation system without review logic
+- a substitute for professional responsibility
+
+---
+
+## One-line summary
+
+**GosseOS turns messy input into structured, reviewable, reusable work.**
