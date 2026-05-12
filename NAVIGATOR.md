@@ -16,6 +16,9 @@ Use this path.
 ### If you need the terms explained first
 - [Glossary](./GLOSSARY.md)
 
+### If you want the quality rule for artifacts
+- [Artifact Standard](./ARTIFACT_STANDARD.md)
+
 ### If you want the first real orientation
 - [START_HERE.md](./START_HERE.md)
 
@@ -91,6 +94,11 @@ Use KnowledgeOS when the question is:
 1. [KnowledgeOS Extract Index](./knowledgeos/extracts/README.md)
 2. [2026-04-19 Main Extract](./knowledgeos/extracts/2026-04-19_operator-fischer_chat-extract_voice-governance-character.md)
 3. [2026-04-19 Artifact Bundle](./knowledgeos/extracts/2026-04-19_operator-fischer_chat-artifacts.md)
+
+### Path E — You want to add or improve files
+1. [Artifact Standard](./ARTIFACT_STANDARD.md)
+2. [Red-Team Review](./reviews/RED_TEAM_REVIEW.md)
+3. [Governance Gate](./templates/GOVERNANCE_GATE.md)
 
 ---
 
