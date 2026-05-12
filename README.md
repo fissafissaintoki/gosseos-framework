@@ -117,6 +117,20 @@ For simple definitions, see the [Glossary](./GLOSSARY.md).
 
 ---
 
+## Quality standard
+
+Every reusable artifact should follow the internal [Artifact Standard](./ARTIFACT_STANDARD.md).
+
+Minimum rule:
+
+```text
+Purpose -> Input Type -> Problem Class -> Working Mode -> Output -> Governance Check -> Reuse Note
+```
+
+If a file cannot answer these questions, it is not yet a valid artifact.
+
+---
+
 ## Start here
 
 If you are new, use this path:
@@ -124,11 +138,12 @@ If you are new, use this path:
 1. [Start in 2 Minutes](./START_IN_2_MIN.md)
 2. [Public Short Description](./PUBLIC_SHORT_DESCRIPTION.md)
 3. [Glossary](./GLOSSARY.md)
-4. [Run the GosseOS Workflow](./RUN_GOSSEOS_WORKFLOW.md)
-5. [Navigator](./NAVIGATOR.md)
-6. [Raw Input to Artifact Framework](./frameworks/rawinput-to-artifact.md)
-7. [Universal Artifact Builder Prompt](./prompts/universal-artifact-builder.md)
-8. [Red-Team Review](./reviews/RED_TEAM_REVIEW.md)
+4. [Artifact Standard](./ARTIFACT_STANDARD.md)
+5. [Run the GosseOS Workflow](./RUN_GOSSEOS_WORKFLOW.md)
+6. [Navigator](./NAVIGATOR.md)
+7. [Raw Input to Artifact Framework](./frameworks/rawinput-to-artifact.md)
+8. [Universal Artifact Builder Prompt](./prompts/universal-artifact-builder.md)
+9. [Red-Team Review](./reviews/RED_TEAM_REVIEW.md)
 
 ---
 
@@ -140,6 +155,7 @@ gosseos-framework/
 ├── START_IN_2_MIN.md
 ├── PUBLIC_SHORT_DESCRIPTION.md
 ├── GLOSSARY.md
+├── ARTIFACT_STANDARD.md
 ├── RUN_GOSSEOS_WORKFLOW.md
 ├── NAVIGATOR.md
 ├── frameworks/
