@@ -1,0 +1,236 @@
+name: Operator Build Task
+description: Create a structured GosseOS / Operator Fischer artifact task
+title: "[BUILD] "
+labels:
+  - build
+  - artifact-standard
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for controlled Operator tasks.
+
+        Goal:
+        Raw input becomes a clear, reviewable, reusable artifact.
+
+        Required chain:
+        Raw Input → Problem Class → Working Mode → Artifact → Governance → Red-Team → Reuse
+
+  - type: textarea
+    id: raw_input
+    attributes:
+      label: Raw Input
+      description: Paste the messy idea, problem, voice transcript, draft, or task here.
+      placeholder: |
+        Example:
+        I want to turn the GlowGlove picking idea into a presentation-ready case with safety logic and MVP scope.
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should exist after this task is completed?
+      placeholder: |
+        Example:
+        Create a reusable case study artifact and supporting template for future logistics innovation cases.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem_class
+    attributes:
+      label: Problem Class
+      description: Select the dominant problem class. If unclear, choose Ambiguity / Needs Structuring.
+      options:
+        - Ambiguity / Needs Structuring
+        - Artifact Creation
+        - Operational Logistics Process
+        - AI Workflow / Agentic Work
+        - Governance / Control
+        - Safety / Compliance
+        - Communication / Briefing
+        - Strategic Positioning
+        - Decision Support
+        - Product / MVP Concept
+        - Documentation / Template
+        - Red-Team / Risk Review
+    validations:
+      required: true
+
+  - type: dropdown
+    id: primary_mode
+    attributes:
+      label: Primary Mode
+      description: Select one dominant working mode.
+      options:
+        - META
+        - ANALYZE
+        - BUILD
+        - AUDIT
+        - RED TEAM
+        - BRIEFING
+        - GOVERNANCE
+        - OPTIMIZE
+        - EXECUTE
+    validations:
+      required: true
+
+  - type: dropdown
+    id: secondary_mode
+    attributes:
+      label: Secondary Mode
+      description: Optional supporting mode. Use NONE if not needed.
+      options:
+        - NONE
+        - META
+        - ANALYZE
+        - BUILD
+        - AUDIT
+        - RED TEAM
+        - BRIEFING
+        - GOVERNANCE
+        - OPTIMIZE
+        - EXECUTE
+    validations:
+      required: true
+
+  - type: textarea
+    id: target_artifact
+    attributes:
+      label: Target Artifact
+      description: Name the concrete file, output, or deliverable.
+      placeholder: |
+        Example:
+        templates/universal-case-study-template.md
+        cases/glowglove-picking-system.md
+        reviews/glowglove-bghw-safety-audit.md
+    validations:
+      required: true
+
+  - type: dropdown
+    id: artifact_type
+    attributes:
+      label: Artifact Type
+      description: What kind of artifact should be created or improved?
+      options:
+        - Framework
+        - Case Study
+        - Template
+        - Prompt
+        - Checklist
+        - Matrix
+        - Review / Audit
+        - Governance Gate
+        - Safety Document
+        - MVP Specification
+        - App Prototype
+        - README / Documentation
+        - KnowledgeOS Extract
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Define boundaries, terms, standards, or things that must not happen.
+      placeholder: |
+        Example:
+        - Follow ARTIFACT_STANDARD.md
+        - Do not introduce new system names
+        - Use GosseOS / KnowledgeOS consistently
+        - Keep it understandable for outsiders
+        - No production-readiness claims without validation
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: artifact_standard
+    attributes:
+      label: Artifact Standard Check
+      description: Confirm the artifact will follow the internal quality rule.
+      options:
+        - label: Purpose is defined
+          required: true
+        - label: Input Type is defined
+          required: true
+        - label: Problem Class is defined
+          required: true
+        - label: Working Mode is defined
+          required: true
+        - label: Output is defined
+          required: true
+        - label: Governance Check is included
+          required: true
+        - label: Reuse Note is included
+          required: true
+        - label: Status Classification is included
+          required: true
+
+  - type: checkboxes
+    id: governance_triggers
+    attributes:
+      label: Governance Triggers
+      description: Select all that apply.
+      options:
+        - label: Workplace safety
+        - label: Worker monitoring or personal data
+        - label: Legal / compliance sensitivity
+        - label: Medical / health topic
+        - label: Financial decision
+        - label: Operational deployment
+        - label: Real-world automation
+        - label: Public claims about capability or certification
+        - label: None of the above
+
+  - type: textarea
+    id: red_team_notes
+    attributes:
+      label: Red-Team Notes
+      description: What could fail, drift, be misunderstood, or be overstated?
+      placeholder: |
+        Example:
+        - Risk of overclaiming production-readiness
+        - Safety validation missing
+        - Possible worker monitoring concern
+        - Concept may become too abstract without MVP scope
+    validations:
+      required: true
+
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: Definition of Done
+      description: What must be true before this issue can be closed?
+      placeholder: |
+        Example:
+        - File exists in correct folder
+        - Artifact follows ARTIFACT_STANDARD.md
+        - Governance warning included where required
+        - Red-Team notes included
+        - README/NAVIGATOR linked if needed
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target_status
+    attributes:
+      label: Target Status Classification
+      description: Expected status after completion.
+      options:
+        - DRAFT
+        - USABLE
+        - APPROVED WITH WARNING
+        - APPROVED
+        - DEPRECATED
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        Final rule:
+        No issue should become a file until it has a clear artifact target.
+        No file should be treated as stable until it passes Artifact Standard, Red-Team, and Governance checks where required.
