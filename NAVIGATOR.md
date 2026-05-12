@@ -13,6 +13,9 @@ Use this path.
 ### If you want the shortest explanation
 - [Public Short Description](./PUBLIC_SHORT_DESCRIPTION.md)
 
+### If you need the terms explained first
+- [Glossary](./GLOSSARY.md)
+
 ### If you want the first real orientation
 - [START_HERE.md](./START_HERE.md)
 
@@ -34,7 +37,7 @@ That is the central operating logic behind GosseOS and KnowledgeOS.
 
 ## 3. What GosseOS does
 
-GosseOS is the **working architecture**.
+GosseOS is the **workflow and execution structure**.
 It helps structure:
 - problem classification
 - mode selection
@@ -67,21 +70,27 @@ Use KnowledgeOS when the question is:
 
 ### Path A — You want to understand the project fast
 1. [Public Short Description](./PUBLIC_SHORT_DESCRIPTION.md)
-2. [START_HERE.md](./START_HERE.md)
-3. [README.md](./README.md)
+2. [Glossary](./GLOSSARY.md)
+3. [START_HERE.md](./START_HERE.md)
+4. [README.md](./README.md)
 
-### Path B — You want to see real extracted work
+### Path B — You want to use the method immediately
+1. [Start in 2 Minutes](./START_IN_2_MIN.md)
+2. [Raw Input to Artifact Framework](./frameworks/rawinput-to-artifact.md)
+3. [Universal Artifact Builder Prompt](./prompts/universal-artifact-builder.md)
+4. [Governance Gate](./templates/GOVERNANCE_GATE.md)
+5. [Red-Team Review](./reviews/RED_TEAM_REVIEW.md)
+
+### Path C — You want proof cases
+1. [Formal Response Letter](./cases/formal-response-letter.md)
+2. [Logistics Decision Model](./cases/logistics-decision-model.md)
+3. [Prompt Generator Concept](./cases/prompt-generator-concept.md)
+4. [Cold Chain Risk Case](./cases/LOGISTICS_COLD_CHAIN_RISK_CASE.md)
+
+### Path D — You want extracted work
 1. [KnowledgeOS Extract Index](./knowledgeos/extracts/README.md)
 2. [2026-04-19 Main Extract](./knowledgeos/extracts/2026-04-19_operator-fischer_chat-extract_voice-governance-character.md)
 3. [2026-04-19 Artifact Bundle](./knowledgeos/extracts/2026-04-19_operator-fischer_chat-artifacts.md)
-
-### Path C — You want the current strongest themes
-Focus especially on:
-- governance-first AI architecture
-- bounded reasoning vs. governed execution
-- LLM routing by task class
-- voice-first hybrid workflows
-- character steering / self-governance
 
 ---
 
