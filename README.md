@@ -64,7 +64,7 @@ Case library / reusable framework / public proof of work
 
 ### GosseOS
 
-The execution layer.
+The workflow and execution structure.
 
 It structures the work through problem classes, modes, artifact logic, review gates, and controlled execution.
 
@@ -83,6 +83,8 @@ It translates raw input into structured, reusable work through a repeatable chai
 ```text
 raw input -> problem class -> mode -> structure -> artifact -> review -> reuse
 ```
+
+For simple definitions, see the [Glossary](./GLOSSARY.md).
 
 ---
 
@@ -121,11 +123,12 @@ If you are new, use this path:
 
 1. [Start in 2 Minutes](./START_IN_2_MIN.md)
 2. [Public Short Description](./PUBLIC_SHORT_DESCRIPTION.md)
-3. [Run the GosseOS Workflow](./RUN_GOSSEOS_WORKFLOW.md)
-4. [Navigator](./NAVIGATOR.md)
-5. [Raw Input to Artifact Framework](./frameworks/rawinput-to-artifact.md)
-6. [Universal Artifact Builder Prompt](./prompts/universal-artifact-builder.md)
-7. [Red-Team Review](./reviews/RED_TEAM_REVIEW.md)
+3. [Glossary](./GLOSSARY.md)
+4. [Run the GosseOS Workflow](./RUN_GOSSEOS_WORKFLOW.md)
+5. [Navigator](./NAVIGATOR.md)
+6. [Raw Input to Artifact Framework](./frameworks/rawinput-to-artifact.md)
+7. [Universal Artifact Builder Prompt](./prompts/universal-artifact-builder.md)
+8. [Red-Team Review](./reviews/RED_TEAM_REVIEW.md)
 
 ---
 
@@ -136,6 +139,7 @@ gosseos-framework/
 ├── README.md
 ├── START_IN_2_MIN.md
 ├── PUBLIC_SHORT_DESCRIPTION.md
+├── GLOSSARY.md
 ├── RUN_GOSSEOS_WORKFLOW.md
 ├── NAVIGATOR.md
 ├── frameworks/
