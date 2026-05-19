@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: prompterator
+    runtime: static
+    branch: main
+    buildCommand: echo "Prompterator static site - no build required"
+    staticPublishPath: demos/operator-fischer-proof-of-work-demo/site
+    pullRequestPreviewsEnabled: true
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
