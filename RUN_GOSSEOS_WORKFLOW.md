@@ -12,6 +12,38 @@ raw input -> router -> mode -> template -> artifact -> governance -> KnowledgeOS
 
 ---
 
+## 0. Run the Error-to-Upgrade Preflight
+
+Before routing or calling any tool, open:
+
+```text
+templates/ERROR_TO_UPGRADE_GATE.md
+```
+
+Resolve, in this order:
+
+1. active command or mode
+2. stop, collection-only, audit-only, or owner-approval state
+3. prior artifacts, canon, files, and decisions
+4. mandatory locks
+5. allowed action class
+6. stop condition
+
+Hard blocks:
+
+```text
+STOP active                         -> no tool call
+UPGRADE ON / collection-only        -> no generation or editing
+repository or existing system       -> audit before build
+named recurring entity or location  -> canon retrieval before build
+unresolved required lock            -> no generation
+failed quality gate                 -> no release
+```
+
+A confirmed P0/P1 failure must become an incident, invariant, runtime guard, regression case, and KnowledgeOS artifact before the same execution path is reused.
+
+---
+
 ## 1. Start With Raw Input
 
 Raw input can be messy.
@@ -169,6 +201,9 @@ They require combined AUDIT + BUILD + RED TEAM routing because performance, comp
 Raw Input:
 Cold chain performance and error problems.
 
+Preflight:
+Active state and hard blocks resolved.
+
 Router:
 Operational Logistics Process -> AUDIT + BUILD.
 
@@ -201,7 +236,7 @@ Ask AI for advice and accept the first answer.
 Right:
 
 ```text
-Route the input, select mode, build artifact, verify governance, extract reusable knowledge.
+Resolve state, run preflight, route the input, select mode, build artifact, verify governance, extract reusable knowledge.
 ```
 
 ---
