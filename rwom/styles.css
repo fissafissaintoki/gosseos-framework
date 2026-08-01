@@ -1,0 +1,13 @@
+:root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; background: #07100c; color: #fff; }
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+body { background: radial-gradient(circle at 50% 20%, #263525, #07100c 62%); }
+#launch { position: fixed; z-index: 10; inset: 0; display: grid; place-content: center; justify-items: center; gap: 14px; padding: 28px; text-align: center; background: rgba(5, 12, 9, .92); }
+#launch[hidden] { display: none; }
+.eyebrow { margin: 0; color: #d7b85b; letter-spacing: .16em; font-size: 12px; }
+h1 { margin: 0; font-size: clamp(64px, 16vw, 154px); line-height: .86; letter-spacing: -.06em; }
+#launch p { max-width: 620px; margin: 0; color: #c9d2cd; font-size: 18px; }
+#enter-vr { min-width: min(430px, 88vw); margin-top: 16px; padding: 18px 26px; border: 1px solid #f1df9a; border-radius: 12px; background: #d7b85b; color: #07100c; font: inherit; font-weight: 900; }
+#enter-vr:disabled { opacity: .45; }
+#xr-state { font-size: 13px !important; color: #91a198 !important; }
+a-scene { width: 100%; height: 100%; }
