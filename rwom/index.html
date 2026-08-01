@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="theme-color" content="#07100c" />
+  <title>KYRON RWOM · Quest</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+</head>
+<body>
+  <main id="launch">
+    <p class="eyebrow">KYRON · REAL WORLD OPERATOR MODE</p>
+    <h1>RWOM</h1>
+    <p>Raschelwald und OperatorDeck sind bereit.</p>
+    <button id="enter-vr" type="button" disabled>BRILLE WIRD GEPRÜFT …</button>
+    <p id="xr-state" role="status">WebXR-Prüfung läuft.</p>
+  </main>
+
+  <a-scene id="rwom-scene" embedded vr-mode-ui="enabled: false"
+    renderer="colorManagement: true; antialias: true; precision: medium"
+    background="color: #07100c">
+    <a-entity id="world-raschelwald">
+      <a-sky color="#17231d"></a-sky>
+      <a-circle rotation="-90 0 0" radius="18" color="#172016"></a-circle>
+      <a-entity id="forest">
+        <a-cone position="-5 2 -8" radius-bottom="2.4" radius-top="0" height="5" color="#1f4b31"></a-cone>
+        <a-cone position="-2 1.8 -7" radius-bottom="2" radius-top="0" height="4.6" color="#285b3a"></a-cone>
+        <a-cone position="2.5 2.1 -8" radius-bottom="2.5" radius-top="0" height="5.4" color="#1f4b31"></a-cone>
+        <a-cone position="5.5 1.7 -7" radius-bottom="1.9" radius-top="0" height="4.2" color="#285b3a"></a-cone>
+        <a-ring position="0 .02 -3.2" rotation="-90 0 0" radius-inner="1.6" radius-outer="1.72" color="#d7b85b"></a-ring>
+      </a-entity>
+    </a-entity>
+
+    <a-entity id="world-operator" visible="false">
+      <a-sky color="#050914"></a-sky>
+      <a-plane rotation="-90 0 0" width="30" height="30" color="#0b1722"></a-plane>
+      <a-torus position="0 2 -7" radius="3" radius-tubular=".05" color="#39a9ff"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 18000; easing: linear"></a-torus>
+    </a-entity>
+
+    <a-entity id="rig">
+      <a-camera position="0 1.65 0">
+        <a-cursor fuse="false" raycaster="objects: .interactive"
+          geometry="primitive: ring; radiusInner: .006; radiusOuter: .010"
+          material="color: #f4d06f; shader: flat"></a-cursor>
+      </a-camera>
+      <a-entity laser-controls="hand: left" raycaster="objects: .interactive"></a-entity>
+      <a-entity laser-controls="hand: right" raycaster="objects: .interactive"></a-entity>
+    </a-entity>
+
+    <a-entity position="0 1.6 -2.45">
+      <a-plane width="2.7" height="1.35" color="#07110f" opacity=".95"></a-plane>
+      <a-text value="KYRON · RWOM" align="center" width="2.3" position="0 .45 .01" color="#f1df9a"></a-text>
+      <a-text id="world-label" value="AKTIVE WELT: RASCHELWALD" align="center" width="2" position="0 .18 .01"></a-text>
+      <a-plane class="interactive" world-switch="target: RASCHELWALD" position="-.63 -.2 .02" width="1.08" height=".36" color="#6f5f24">
+        <a-text value="RASCHELWALD" align="center" width="1.2" position="0 0 .01"></a-text>
+      </a-plane>
+      <a-plane class="interactive" world-switch="target: OPERATORDECK" position=".63 -.2 .02" width="1.08" height=".36" color="#155783">
+        <a-text value="OPERATORDECK" align="center" width="1.2" position="0 0 .01"></a-text>
+      </a-plane>
+      <a-text value="Trigger: auswählen · Meta-Taste: verlassen" align="center" width="1.8" position="0 -.49 .01" color="#a9b8b0"></a-text>
+    </a-entity>
+  </a-scene>
+  <script src="./app.js"></script>
+</body>
+</html>
