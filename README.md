@@ -1,6 +1,8 @@
-# GosseOS Framework — Operator Fischer Method
+# IntoKI OS Framework — Operator Fischer Method
 
-**GosseOS is a structured AI work system for turning messy input into reusable, reviewable work artifacts.**
+> IntoKI OS was previously called IntoKI OS. File names such as `GOSSEOS_CORE.md` and `tools/gosseos_router.py` keep the old name for now, so existing links keep working.
+
+**IntoKI OS is a structured AI work system for turning messy input into reusable, reviewable work artifacts.**
 
 This repository is not a random prompt collection.
 It is a public framework for operating AI more like a work system:
@@ -26,7 +28,7 @@ Most AI workflows fail in the same places:
 - good results disappear in chat history
 - prompts are reused without context or quality control
 
-GosseOS addresses this by adding structure before generation.
+IntoKI OS addresses this by adding structure before generation.
 
 Instead of asking AI for a direct answer, the workflow first asks:
 
@@ -62,7 +64,7 @@ Case library / reusable framework / public proof of work
 
 ## Key concepts
 
-### GosseOS
+### IntoKI OS
 
 The workflow and execution structure.
 
@@ -139,7 +141,7 @@ If you are new, use this path:
 2. [Public Short Description](./PUBLIC_SHORT_DESCRIPTION.md)
 3. [Glossary](./GLOSSARY.md)
 4. [Artifact Standard](./ARTIFACT_STANDARD.md)
-5. [Run the GosseOS Workflow](./RUN_GOSSEOS_WORKFLOW.md)
+5. [Run the IntoKI OS Workflow](./RUN_GOSSEOS_WORKFLOW.md)
 6. [Navigator](./NAVIGATOR.md)
 7. [Raw Input to Artifact Framework](./frameworks/rawinput-to-artifact.md)
 8. [Universal Artifact Builder Prompt](./prompts/universal-artifact-builder.md)
@@ -219,4 +221,4 @@ This is not:
 
 ## One-line summary
 
-**GosseOS turns messy input into structured, reviewable, reusable work.**
+**IntoKI OS turns messy input into structured, reviewable, reusable work.**
