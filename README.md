@@ -1,6 +1,6 @@
 # IntoKI OS Framework — Operator Fischer Method
 
-> IntoKI OS was previously called IntoKI OS. File names such as `GOSSEOS_CORE.md` and `tools/gosseos_router.py` keep the old name for now, so existing links keep working.
+> IntoKI OS was previously called GosseOS. File names such as `GOSSEOS_CORE.md` and `tools/gosseos_router.py` keep the old name for now, so existing links keep working.
 
 **IntoKI OS is a structured AI work system for turning messy input into reusable, reviewable work artifacts.**
 
