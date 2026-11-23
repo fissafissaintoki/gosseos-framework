@@ -54,10 +54,11 @@ env:
 
 on:
   # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
+  # Manual only: no OpenShift cluster or Dockerfile is configured for this
+  # repository yet. The public site is deployed by Render (render.yaml).
+  # Restore the push trigger once OPENSHIFT_SERVER/OPENSHIFT_TOKEN and a
+  # Dockerfile exist.
   workflow_dispatch:
-  push:
-    # Edit to the branch(es) you want to build and deploy on each push.
-    branches: [ "main" ]
 
 jobs:
   # 🖊️ EDIT if you want to run vulnerability check on your project before deploying
